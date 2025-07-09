@@ -30,11 +30,12 @@
     "gulp-eslint": "^6.0.0",
     "gulp-html-replace": "^1.6.2",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-postcss": "^9.0.1",
     "gulp-prettier": "^4.0.0",
     "gulp-print": "^5.0.2",
     "gulp-terser": "^2.1.0",
+    "gulp-zip": "^5.1.0",
     "rimraf": "^5.0.1"
   }
 }

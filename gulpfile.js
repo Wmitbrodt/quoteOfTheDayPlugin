@@ -176,3 +176,22 @@ exports.default = series(
     imagesTask,
   ),
 );
+
+exports.default = series(
+  // lint,
+  clean,
+  // prettierTask,
+  parallel(
+    widgetCSS,
+    controlContentCSS,
+    controlDesignCSS,
+    controlSettingsCSS,
+    widgetJS,
+    controlContentJS,
+    controlDesignJS,
+    controlSettingsJS,
+    htmlTask,
+    resourcesTask,
+    imagesTask,
+  ),
+);
