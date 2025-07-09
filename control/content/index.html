@@ -6,16 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../../../../scripts/buildfire.js"></script>
   <link rel="stylesheet" type="text/css" href="css/content.css" />
+  <script src="../../scripts/tinymce/js/tinymce/tinymce.min.js"></script>
 </head>
 <body>
   <div class="settings-section">
     <h3>Edit Greeting Message</h3>
-    <input type="text" id="customGreetingInput" placeholder="Enter custom greeting..." />
+    <p>Customize the greeting message that appears on the Quote of the Day plugin.</p>
+    <p>Use the editor below to create a personalized greeting. You can use HTML tags
+    <p><b>Note:</b> Default is always 'Good {time of day}', e.g., 'Good morning'</p>
+      <div id="customGreetingEditor"></div>
     <div class="button-row">
       <button id="saveGreetingBtn">Save Greeting</button>
       <button id="resetGreetingBtn">Reset to Default</button>
     </div>
   </div>
+  
 
   <script src="js/content.js"></script>
 </body>

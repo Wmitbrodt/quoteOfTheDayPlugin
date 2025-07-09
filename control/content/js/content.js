@@ -1,27 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const input = document.getElementById("customGreetingInput");
-    const saveBtn = document.getElementById("saveGreetingBtn");
-    const resetBtn = document.getElementById("resetGreetingBtn");
-  
-    // Load saved greeting on load
-    buildfire.datastore.get("GreetingSettings", (err, result) => {
-      if (result && result.data && result.data.customGreeting) {
-        input.value = result.data.customGreeting;
+  const saveBtn = document.getElementById("saveGreetingBtn");
+  const resetBtn = document.getElementById("resetGreetingBtn");
+
+  // Load saved greeting and initialize TinyMCE
+  buildfire.datastore.get("GreetingSettings", (err, result) => {
+    const savedGreeting = result?.data?.customGreeting || "";
+    
+    tinymce.init({
+      selector: '#customGreetingEditor',
+      menubar: false,
+      plugins: 'link lists',
+      toolbar: 'undo redo | bold italic | alignleft aligncenter alignright | bullist numlist | link',
+      setup: (editor) => {
+        editor.on('init', () => {
+          editor.setContent(savedGreeting);
+        });
       }
     });
-  
-    saveBtn.addEventListener("click", () => {
-      const greeting = input.value.trim();
-      buildfire.datastore.save({ customGreeting: greeting }, "GreetingSettings", () => {
-        alert("Greeting saved!");
-      });
-    });
-  
-    resetBtn.addEventListener("click", () => {
-      buildfire.datastore.save({ customGreeting: "" }, "GreetingSettings", () => {
-        input.value = "";
-        alert("Greeting reset to default!");
-      });
+  });
+
+  // Save greeting to datastore
+  saveBtn.addEventListener("click", () => {
+    const editor = tinymce.get('customGreetingEditor');
+    const greeting = editor ? editor.getContent() : "";
+    buildfire.datastore.save({ customGreeting: greeting }, "GreetingSettings", () => {
+      alert("Greeting saved!");
     });
   });
-  
+
+  // Reset to default greeting
+  resetBtn.addEventListener("click", () => {
+    const defaultGreeting = "<p>Good morning!</p>";
+    const editor = tinymce.get('customGreetingEditor');
+    if (editor) editor.setContent(defaultGreeting);
+    buildfire.datastore.save({ customGreeting: defaultGreeting }, "GreetingSettings", () => {
+      alert("Greeting reset to default!");
+    });
+  });
+});

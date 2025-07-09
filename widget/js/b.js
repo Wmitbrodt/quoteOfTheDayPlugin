@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       timeZoneName: 'short'
     });
 
-    greetingText.textContent = customGreeting || greeting;
+    greetingText.innerHTML = customGreeting || greeting;
     currentTime.textContent = timeString;
   }
 
