@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const showGreeting = document.getElementById("showGreeting");
   const showTime = document.getElementById("showTime");
   const allowQuoteReset = document.getElementById("allowQuoteReset");
+  const backgroundGradientInput = document.getElementById("backgroundGradientInput");
   const saveBtn = document.getElementById("saveBtn");
 
   // Load saved settings
@@ -14,11 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const data = result?.data || {};
 
-    // Default fallback values
     chooseRandomCategories.checked = !!data.chooseRandomCategories;
-    showGreeting.checked = data.showGreeting !== false; // defaults to true
-    showTime.checked = data.showTime !== false;         // defaults to true
-    allowQuoteReset.checked = data.allowQuoteReset !== false; // defaults to true
+    showGreeting.checked = data.showGreeting !== false;
+    showTime.checked = data.showTime !== false;
+    allowQuoteReset.checked = data.allowQuoteReset !== false;
+    backgroundGradientInput.value = data.backgroundGradient || "";
   });
 
   // Save logic on button click
@@ -27,7 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
       chooseRandomCategories: chooseRandomCategories.checked,
       showGreeting: showGreeting.checked,
       showTime: showTime.checked,
-      allowQuoteReset: allowQuoteReset.checked
+      allowQuoteReset: allowQuoteReset.checked,
+      backgroundGradient: backgroundGradientInput.value.trim()
     };
 
     buildfire.datastore.save(newSettings, "Settings", err => {

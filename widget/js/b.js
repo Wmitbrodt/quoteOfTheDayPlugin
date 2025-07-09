@@ -36,15 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
   function applySettings() {
     const showGreetingValue = settings.showGreeting !== false;
     const showTimeValue = settings.showTime !== false;
-  
+
     greetingText.style.display = showGreetingValue ? "block" : "none";
     currentTime.style.display = showTimeValue ? "block" : "none";
     anotherBtn.style.display = settings.allowQuoteReset !== false ? "inline-block" : "none";
-  
+
     const showCategoryUI = !settings.chooseRandomCategories;
     categorySelect.style.display = showCategoryUI ? "block" : "none";
     if (categoryLabel) categoryLabel.style.display = showCategoryUI ? "block" : "none";
-  
+
     // 💡 Call updateGreeting early if greeting should show
     if (showGreetingValue || showTimeValue) {
       buildfire.datastore.get("GreetingSettings", (err, result) => {
@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-  
 
   function populateCategories(categories) {
     categorySelect.innerHTML = `<option value="">-- Choose a category --</option>`;
@@ -136,6 +135,12 @@ document.addEventListener("DOMContentLoaded", () => {
       allowQuoteReset: true,
       chooseRandomCategories: false
     };
+
+    // ✅ Apply background gradient
+    if (settings.backgroundGradient) {
+      document.body.style.background = settings.backgroundGradient;
+    }
+
     applySettings();
   });
 
