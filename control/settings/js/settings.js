@@ -14,10 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const data = result?.data || {};
 
+    // Default fallback values
     chooseRandomCategories.checked = !!data.chooseRandomCategories;
-    showGreeting.checked = !!data.showGreeting;
-    showTime.checked = !!data.showTime;
-    allowQuoteReset.checked = !!data.allowQuoteReset;
+    showGreeting.checked = data.showGreeting !== false; // defaults to true
+    showTime.checked = data.showTime !== false;         // defaults to true
+    allowQuoteReset.checked = data.allowQuoteReset !== false; // defaults to true
   });
 
   // Save logic on button click

@@ -34,14 +34,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function applySettings() {
-    greetingText.style.display = settings.showGreeting ? "block" : "none";
-    currentTime.style.display = settings.showTime ? "block" : "none";
-    anotherBtn.style.display = settings.allowQuoteReset ? "inline-block" : "none";
-
+    const showGreetingValue = settings.showGreeting !== false;
+    const showTimeValue = settings.showTime !== false;
+  
+    greetingText.style.display = showGreetingValue ? "block" : "none";
+    currentTime.style.display = showTimeValue ? "block" : "none";
+    anotherBtn.style.display = settings.allowQuoteReset !== false ? "inline-block" : "none";
+  
     const showCategoryUI = !settings.chooseRandomCategories;
     categorySelect.style.display = showCategoryUI ? "block" : "none";
     if (categoryLabel) categoryLabel.style.display = showCategoryUI ? "block" : "none";
+  
+    // 💡 Call updateGreeting early if greeting should show
+    if (showGreetingValue || showTimeValue) {
+      buildfire.datastore.get("GreetingSettings", (err, result) => {
+        if (err) updateGreeting();
+        else updateGreeting(result?.data?.customGreeting);
+      });
+    }
   }
+  
 
   function populateCategories(categories) {
     categorySelect.innerHTML = `<option value="">-- Choose a category --</option>`;
@@ -125,11 +137,6 @@ document.addEventListener("DOMContentLoaded", () => {
       chooseRandomCategories: false
     };
     applySettings();
-  });
-
-  buildfire.datastore.get("GreetingSettings", (err, result) => {
-    if (err) updateGreeting();
-    else updateGreeting(result?.data?.customGreeting);
   });
 
   fetch("../widget/data/quotes.json")
