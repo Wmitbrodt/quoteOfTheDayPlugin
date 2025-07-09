@@ -30,11 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Reset to default greeting
   resetBtn.addEventListener("click", () => {
-    const defaultGreeting = "<p>Good morning!</p>";
     const editor = tinymce.get('customGreetingEditor');
-    if (editor) editor.setContent(defaultGreeting);
-    buildfire.datastore.save({ customGreeting: defaultGreeting }, "GreetingSettings", () => {
+    if (editor) editor.setContent(""); // Clear the editor UI
+  
+    // Save as null (or simply omit it) so widget falls back to dynamic
+    buildfire.datastore.save({ customGreeting: "" }, "GreetingSettings", () => {
       alert("Greeting reset to default!");
     });
-  });
+  });  
 });
