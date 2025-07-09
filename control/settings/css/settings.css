@@ -1,0 +1,23 @@
+.settings-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+}
+
+.settings-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.settings-section select,
+.settings-section input[type="checkbox"] {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.settings-section button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

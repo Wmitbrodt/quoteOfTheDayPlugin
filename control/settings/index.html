@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8" />
-
-	<!-- JS -->
-	<script src="../../../../scripts/buildfire.js"></script>
-
-	<!--
-	<script src="../../../../scripts/angular/angular.min.js"></script>
-	<script src="../../../../scripts/angular/ui-bootstrap.min.js"></script>
-	<script src="../../../../scripts/jquery/jquery-1.11.2.min.js"></script>
-	-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="../../../../scripts/buildfire.js"></script>
+  <link rel="stylesheet" href="./css/settings.css" />
+  <script src="./js/settings.js" defer></script>
 </head>
 <body>
-<span>Settings - Hello, world!</span>
+  <h2>Plugin Settings</h2>
+  <label>
+    <input type="checkbox" id="chooseRandomCategories" />
+    Choose random categories & hide category selection
+  </label>
+  <hr>
+  <label>
+    <input type="checkbox" id="showGreeting" />
+    Show greeting
+  </label><br />
+
+  <label>
+    <input type="checkbox" id="showTime" />
+    Show time
+  </label><br />
+
+  <label>
+    <input type="checkbox" id="allowQuoteReset" />
+    Allow quote reset
+  </label><br />
+
+  <button id="saveBtn">Save Settings</button>
+
 </body>
 </html>
