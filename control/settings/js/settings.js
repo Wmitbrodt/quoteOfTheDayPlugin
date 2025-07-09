@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const backgroundGradientInput = document.getElementById("backgroundGradientInput");
   const saveBtn = document.getElementById("saveBtn");
 
-  // Load saved settings
+  // Load saved settings and populate form fields
   buildfire.datastore.get("Settings", (err, result) => {
     if (err) {
       console.error("Error loading settings:", err);
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     backgroundGradientInput.value = data.backgroundGradient || "";
   });
 
-  // Save logic on button click
+  // Save settings when the Save button is clicked
   saveBtn.addEventListener("click", () => {
     const newSettings = {
       chooseRandomCategories: chooseRandomCategories.checked,

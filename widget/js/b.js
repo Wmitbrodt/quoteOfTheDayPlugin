@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // DOM elements
   const greetingText = document.getElementById("greetingText");
   const currentTime = document.getElementById("currentTime");
   const categoryLabel = document.querySelector("label[for='categorySelect']");
@@ -8,11 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const quoteAuthor = document.getElementById("quoteAuthor");
   const anotherBtn = document.getElementById("anotherBtn");
 
+  // App state
   let settings = {};
   let quotesData = {};
   let currentCategory = "";
   let currentQuotes = [];
 
+  // Displays either the saved custom greeting or a dynamic one based on time of day
   function updateGreeting(customGreeting = null) {
     const now = new Date();
     const hours = now.getHours();
@@ -33,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentTime.textContent = timeString;
   }
 
+  // Apply all UI behavior based on saved plugin settings
   function applySettings() {
     const showGreetingValue = settings.showGreeting !== false;
     const showTimeValue = settings.showTime !== false;
@@ -45,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     categorySelect.style.display = showCategoryUI ? "block" : "none";
     if (categoryLabel) categoryLabel.style.display = showCategoryUI ? "block" : "none";
 
-    // 💡 Call updateGreeting early if greeting should show
+    // Fetch custom greeting (if set), otherwise fall back to dynamic
     if (showGreetingValue || showTimeValue) {
       buildfire.datastore.get("GreetingSettings", (err, result) => {
         if (err) updateGreeting();
@@ -54,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Populate the category dropdown
   function populateCategories(categories) {
     categorySelect.innerHTML = `<option value="">-- Choose a category --</option>`;
     categories.forEach(category => {
@@ -64,10 +69,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Combine all category quote arrays into one flat array
   function getAllQuotes() {
     return Object.values(quotesData).flat();
   }
 
+  // Try to re-use the quote of the day if it’s already stored locally
   function showQuoteOfTheDay() {
     const today = new Date().toISOString().split("T")[0];
     const key = `lastQuote_${settings.chooseRandomCategories ? 'random' : currentCategory}`;
@@ -86,9 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    // If no saved quote or it's outdated, pick a new one
     showRandomQuote(true);
   }
 
+  // Show a random quote from the selected category (or all)
   function showRandomQuote(save = false) {
     const quotes = settings.chooseRandomCategories ? getAllQuotes() : currentQuotes;
     if (!quotes.length) return;
@@ -110,6 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // When a new category is selected from the dropdown
   categorySelect.addEventListener("change", () => {
     currentCategory = categorySelect.value;
     if (!currentCategory) {
@@ -123,10 +133,12 @@ document.addEventListener("DOMContentLoaded", () => {
     quoteContainer.style.display = "block";
   });
 
+  // Show a new random quote on button click
   anotherBtn.addEventListener("click", () => {
     showRandomQuote(true);
   });
 
+  // Load plugin settings, apply them, and render gradient
   buildfire.datastore.get("Settings", (err, result) => {
     if (err) console.error("Settings fetch error:", err);
     settings = result?.data || {
@@ -136,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       chooseRandomCategories: false
     };
 
-    // ✅ Apply background gradient
+    // ✅ Apply background color or gradient from settings
     if (settings.backgroundGradient) {
       document.body.style.background = settings.backgroundGradient;
     }
@@ -144,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
     applySettings();
   });
 
+  // Load quotes from JSON file and show quote of the day
   fetch("../widget/data/quotes.json")
     .then(response => response.json())
     .then(data => {
@@ -151,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const allCategories = Object.keys(quotesData);
       populateCategories(allCategories);
 
+      // Restore last selected category or default to the first
       if (!settings.chooseRandomCategories) {
         const savedCategory = localStorage.getItem("lastSelectedCategory");
         if (savedCategory && quotesData[savedCategory]) {
