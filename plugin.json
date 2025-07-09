@@ -1,8 +1,9 @@
 {
-  "author": "BuildFire",
-  "pluginName":"Hello World",
-  "pluginDescription":"Bare bones plugin showing simple autonomy of a plugin",
-  "supportEmail": "support@buildfire.com",
+  "name": "quoteOfTheDayByWillMitbrodt",
+  "author": "Will Mitbrodt",
+  "pluginName": "Quote of the Day by Will",
+  "pluginDescription": "Displays a motivational quote each day with category filtering, greetings, and custom messages.",
+  "supportEmail": "wmitbrodt@gmail.com",
   "requireLogin": false,
   "control": {
     "content": {
@@ -18,7 +19,5 @@
   },
   "widget": {},
   "features": [],
-  "languages": [
-    "en"
-  ]
+  "languages": ["en"]
 }

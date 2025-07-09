@@ -1,16 +1,16 @@
 {
-  "name": "buildfireplugin",
+  "name": "quoteOfTheDayPlugin",
   "version": "0.0.1",
-  "description": "template for a buildfire plugin using gulp",
+  "description": "A simple plugin that displays a random quote of the day.",
   "main": "index.js",
   "scripts": {
-    "build": "gulp && cd ../ && rm -rf <pluginName>.zip && zip -r <pluginName>.zip <pluginName>_release && rm -rf <pluginName>_release"
+    "build": "gulp && cd ../ && rm -rf quoteOfTheDay.zip && zip -r quoteOfTheDay.zip quoteOfTheDayPlugin_release && rm -rf quoteOfTheDayPlugin_release"
   },
-  "author": "Mahmoud AlSharif",
+  "author": "Will Mitbrodt",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "http://link-to-your-git-repo.com"
+    "url": "https://github.com/Wmitbrodt/quoteOfTheDayPlugin"
   },
   "browserslist": [
     "last 2 versions",
