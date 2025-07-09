@@ -1,0 +1,24 @@
+{
+  "author": "BuildFire",
+  "pluginName":"Hello World",
+  "pluginDescription":"Bare bones plugin showing simple autonomy of a plugin",
+  "supportEmail": "support@buildfire.com",
+  "requireLogin": false,
+  "control": {
+    "content": {
+      "enabled": true
+    },
+    "design": {
+      "enabled": false
+    },
+    "settings": {
+      "enabled": true
+    },
+    "customTabs": []
+  },
+  "widget": {},
+  "features": [],
+  "languages": [
+    "en"
+  ]
+}

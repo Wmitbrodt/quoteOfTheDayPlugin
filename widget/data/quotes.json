@@ -1,0 +1,978 @@
+{
+    "Motivation": [
+      {
+        "text": "Don't watch the clock; do what it does. Keep going.",
+        "author": "Sam Levenson"
+      },
+      {
+        "text": "The harder you work for something, the greater you'll feel when you achieve it.",
+        "author": "Sudhashree Acharya"
+      },
+      {
+        "text": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs"
+      },
+      {
+        "text": "Believe you can and you're halfway there.",
+        "author": "Theodore Roosevelt"
+      },
+      {
+        "text": "Success is stumbling from failure to failure with no loss of enthusiasm.",
+        "author": "Winston Churchill"
+      },
+      {
+        "text": "You can’t be that kid standing at the top of the waterslide, overthinking it. You have to go down the chute.",
+        "author": "Tina Fey"
+      },
+      {
+        "text": "Perfection is not attainable. But if we chase perfection we can catch excellence.",
+        "author": "Vince Lombardi"
+      },
+      {
+        "text": "Do something today that your future self will thank you for.",
+        "author": "Sean Patrick Flanery"
+      },
+      {
+        "text": "Little things make big days.",
+        "author": "Isabel Marant"
+      },
+      {
+        "text": "It's going to be hard, but hard does not mean impossible.",
+        "author": "Art Williams"
+      },
+      {
+        "text": "Don't watch the clock; do what it does. Keep going.",
+        "author": "Sam Levenson"
+      },
+      {
+        "text": "Get a good idea and stay with it. Dog it, and work at it until it’s done right.",
+        "author": "Walt Disney"
+      },
+      {
+        "text": "Push yourself, because no one else is going to do it for you.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Success doesn't just find you. You have to go out and get it.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Dream bigger. Do bigger.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Great things never come from comfort zones.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Wake up with determination. Go to bed with satisfaction.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Do something today that your future self will thank you for.",
+        "author": "Sean Patrick Flanery"
+      },
+      {
+        "text": "Little things make big days.",
+        "author": "Isabel Marant"
+      },
+      {
+        "text": "It's going to be hard, but hard does not mean impossible.",
+        "author": "Art Williams"
+      },
+      {
+        "text": "Don't watch the clock; do what it does. Keep going.",
+        "author": "Sam Levenson"
+      },
+      {
+        "text": "The harder you work for something, the greater you'll feel when you achieve it.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Push yourself, because no one else is going to do it for you.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Success doesn't just find you. You have to go out and get it.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Dream bigger. Do bigger.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Great things never come from comfort zones.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Wake up with determination. Go to bed with satisfaction.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Do something today that your future self will thank you for.",
+        "author": "Sean Patrick Flanery"
+      },
+      {
+        "text": "Little things make big days.",
+        "author": "Isabel Marant"
+      },
+      {
+        "text": "It's going to be hard, but hard does not mean impossible.",
+        "author": "Art Williams"
+      }
+    ],
+    "Happiness": [
+      {
+        "text": "For every minute you are angry you lose sixty seconds of happiness.",
+        "author": "Ralph Waldo Emerson"
+      },
+      {
+        "text": "Happiness is not something ready made. It comes from your own actions.",
+        "author": "Dalai Lama"
+      },
+      {
+        "text": "Happiness depends upon ourselves.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Count your age by friends, not years. Count your life by smiles, not tears.",
+        "author": "John Lennon"
+      },
+      {
+        "text": "The purpose of our lives is to be happy.",
+        "author": "Dalai Lama"
+      },
+      {
+        "text": "Happiness is a warm puppy.",
+        "author": "Charles M. Schulz"
+      },
+      {
+        "text": "The only joy in the world is to begin.",
+        "author": "Cesare Pavese"
+      },
+      {
+        "text": "The most simple things can bring the most happiness.",
+        "author": "Izabella Scorupco"
+      },
+      {
+        "text": "Success is not the key to happiness. Happiness is the key to success.",
+        "author": "Albert Schweitzer"
+      },
+      {
+        "text": "Happiness radiates like the fragrance from a flower.",
+        "author": "Maharishi Mahesh Yogi"
+      },
+      {
+        "text": "For every minute you are angry you lose sixty seconds of happiness.",
+        "author": "Ralph Waldo Emerson"
+      },
+      {
+        "text": "Happiness is not something ready made. It comes from your own actions.",
+        "author": "Dalai Lama"
+      },
+      {
+        "text": "Happiness depends upon ourselves.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Count your age by friends, not years. Count your life by smiles, not tears.",
+        "author": "John Lennon"
+      },
+      {
+        "text": "The purpose of our lives is to be happy.",
+        "author": "Dalai Lama"
+      },
+      {
+        "text": "Happiness is a warm puppy.",
+        "author": "Charles M. Schulz"
+      },
+      {
+        "text": "The only joy in the world is to begin.",
+        "author": "Cesare Pavese"
+      },
+      {
+        "text": "The most simple things can bring the most happiness.",
+        "author": "Izabella Scorupco"
+      },
+      {
+        "text": "Success is not the key to happiness. Happiness is the key to success.",
+        "author": "Albert Schweitzer"
+      },
+      {
+        "text": "Happiness radiates like the fragrance from a flower.",
+        "author": "Maharishi Mahesh Yogi"
+      },
+      {
+        "text": "For every minute you are angry you lose sixty seconds of happiness.",
+        "author": "Ralph Waldo Emerson"
+      },
+      {
+        "text": "Happiness is not something ready made. It comes from your own actions.",
+        "author": "Dalai Lama"
+      },
+      {
+        "text": "Happiness depends upon ourselves.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Count your age by friends, not years. Count your life by smiles, not tears.",
+        "author": "John Lennon"
+      },
+      {
+        "text": "The purpose of our lives is to be happy.",
+        "author": "Dalai Lama"
+      },
+      {
+        "text": "Happiness is a warm puppy.",
+        "author": "Charles M. Schulz"
+      },
+      {
+        "text": "The only joy in the world is to begin.",
+        "author": "Cesare Pavese"
+      },
+      {
+        "text": "The most simple things can bring the most happiness.",
+        "author": "Izabella Scorupco"
+      },
+      {
+        "text": "Success is not the key to happiness. Happiness is the key to success.",
+        "author": "Albert Schweitzer"
+      },
+      {
+        "text": "Happiness radiates like the fragrance from a flower.",
+        "author": "Maharishi Mahesh Yogi"
+      }
+    ],
+    "Wisdom / Philosophy": [
+      {
+        "text": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+      },
+      {
+        "text": "He who opens a school door, closes a prison.",
+        "author": "Victor Hugo"
+      },
+      {
+        "text": "The unexamined life is not worth living.",
+        "author": "Socrates"
+      },
+      {
+        "text": "Life must be understood backward. But it must be lived forward.",
+        "author": "S\u00f8ren Kierkegaard"
+      },
+      {
+        "text": "Knowing yourself is the beginning of all wisdom.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Happiness is not an ideal of reason but of imagination.",
+        "author": "Immanuel Kant"
+      },
+      {
+        "text": "There is nothing either good or bad, but thinking makes it so.",
+        "author": "William Shakespeare"
+      },
+      {
+        "text": "No man's knowledge here can go beyond his experience.",
+        "author": "John Locke"
+      },
+      {
+        "text": "The mind is everything. What you think you become.",
+        "author": "Buddha"
+      },
+      {
+        "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+      },
+      {
+        "text": "He who opens a school door, closes a prison.",
+        "author": "Victor Hugo"
+      },
+      {
+        "text": "The unexamined life is not worth living.",
+        "author": "Socrates"
+      },
+      {
+        "text": "Life must be understood backward. But it must be lived forward.",
+        "author": "S\u00f8ren Kierkegaard"
+      },
+      {
+        "text": "Knowing yourself is the beginning of all wisdom.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Happiness is not an ideal of reason but of imagination.",
+        "author": "Immanuel Kant"
+      },
+      {
+        "text": "There is nothing either good or bad, but thinking makes it so.",
+        "author": "William Shakespeare"
+      },
+      {
+        "text": "No man's knowledge here can go beyond his experience.",
+        "author": "John Locke"
+      },
+      {
+        "text": "The mind is everything. What you think you become.",
+        "author": "Buddha"
+      },
+      {
+        "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "The only true wisdom is in knowing you know nothing.",
+        "author": "Socrates"
+      },
+      {
+        "text": "He who opens a school door, closes a prison.",
+        "author": "Victor Hugo"
+      },
+      {
+        "text": "The unexamined life is not worth living.",
+        "author": "Socrates"
+      },
+      {
+        "text": "Life must be understood backward. But it must be lived forward.",
+        "author": "S\u00f8ren Kierkegaard"
+      },
+      {
+        "text": "Knowing yourself is the beginning of all wisdom.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Happiness is not an ideal of reason but of imagination.",
+        "author": "Immanuel Kant"
+      },
+      {
+        "text": "There is nothing either good or bad, but thinking makes it so.",
+        "author": "William Shakespeare"
+      },
+      {
+        "text": "No man's knowledge here can go beyond his experience.",
+        "author": "John Locke"
+      },
+      {
+        "text": "The mind is everything. What you think you become.",
+        "author": "Buddha"
+      },
+      {
+        "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+        "author": "Aristotle"
+      }
+    ],
+    "Love / Relationships": [
+      {
+        "text": "Love all, trust a few, do wrong to none.",
+        "author": "William Shakespeare"
+      },
+      {
+        "text": "We accept the love we think we deserve.",
+        "author": "Stephen Chbosky"
+      },
+      {
+        "text": "Love is composed of a single soul inhabiting two bodies.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Where there is love there is life.",
+        "author": "Mahatma Gandhi"
+      },
+      {
+        "text": "To love and be loved is to feel the sun from both sides.",
+        "author": "David Viscott"
+      },
+      {
+        "text": "Love recognizes no barriers.",
+        "author": "Maya Angelou"
+      },
+      {
+        "text": "Love is not only something you feel, it is something you do.",
+        "author": "David Wilkerson"
+      },
+      {
+        "text": "The best thing to hold onto in life is each other.",
+        "author": "Audrey Hepburn"
+      },
+      {
+        "text": "Being deeply loved by someone gives you strength.",
+        "author": "Lao Tzu"
+      },
+      {
+        "text": "Love is when the other person's happiness is more important than your own.",
+        "author": "H. Jackson Brown Jr."
+      },
+      {
+        "text": "Love all, trust a few, do wrong to none.",
+        "author": "William Shakespeare"
+      },
+      {
+        "text": "We accept the love we think we deserve.",
+        "author": "Stephen Chbosky"
+      },
+      {
+        "text": "Love is composed of a single soul inhabiting two bodies.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Where there is love there is life.",
+        "author": "Mahatma Gandhi"
+      },
+      {
+        "text": "To love and be loved is to feel the sun from both sides.",
+        "author": "David Viscott"
+      },
+      {
+        "text": "Love recognizes no barriers.",
+        "author": "Maya Angelou"
+      },
+      {
+        "text": "Love is not only something you feel, it is something you do.",
+        "author": "David Wilkerson"
+      },
+      {
+        "text": "The best thing to hold onto in life is each other.",
+        "author": "Audrey Hepburn"
+      },
+      {
+        "text": "Being deeply loved by someone gives you strength.",
+        "author": "Lao Tzu"
+      },
+      {
+        "text": "Love is when the other person's happiness is more important than your own.",
+        "author": "H. Jackson Brown Jr."
+      },
+      {
+        "text": "Love all, trust a few, do wrong to none.",
+        "author": "William Shakespeare"
+      },
+      {
+        "text": "We accept the love we think we deserve.",
+        "author": "Stephen Chbosky"
+      },
+      {
+        "text": "Love is composed of a single soul inhabiting two bodies.",
+        "author": "Aristotle"
+      },
+      {
+        "text": "Where there is love there is life.",
+        "author": "Mahatma Gandhi"
+      },
+      {
+        "text": "To love and be loved is to feel the sun from both sides.",
+        "author": "David Viscott"
+      },
+      {
+        "text": "Love recognizes no barriers.",
+        "author": "Maya Angelou"
+      },
+      {
+        "text": "Love is not only something you feel, it is something you do.",
+        "author": "David Wilkerson"
+      },
+      {
+        "text": "The best thing to hold onto in life is each other.",
+        "author": "Audrey Hepburn"
+      },
+      {
+        "text": "Being deeply loved by someone gives you strength.",
+        "author": "Lao Tzu"
+      },
+      {
+        "text": "Love is when the other person's happiness is more important than your own.",
+        "author": "H. Jackson Brown Jr."
+      }
+    ],
+    "Success": [
+      {
+        "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "author": "Winston Churchill"
+      },
+      {
+        "text": "Don't be afraid to give up the good to go for the great.",
+        "author": "John D. Rockefeller"
+      },
+      {
+        "text": "I never dreamed about success. I worked for it.",
+        "author": "Est\u00e9e Lauder"
+      },
+      {
+        "text": "Success usually comes to those who are too busy to be looking for it.",
+        "author": "Henry David Thoreau"
+      },
+      {
+        "text": "The road to success and the road to failure are almost exactly the same.",
+        "author": "Colin R. Davis"
+      },
+      {
+        "text": "Opportunities don't happen. You create them.",
+        "author": "Chris Grosser"
+      },
+      {
+        "text": "Don't let the fear of losing be greater than the excitement of winning.",
+        "author": "Robert Kiyosaki"
+      },
+      {
+        "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+        "author": "Winston Churchill"
+      },
+      {
+        "text": "If you really look closely, most overnight successes took a long time.",
+        "author": "Steve Jobs"
+      },
+      {
+        "text": "The only limit to our realization of tomorrow is our doubts of today.",
+        "author": "Franklin D. Roosevelt"
+      },
+      {
+        "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "author": "Winston Churchill"
+      },
+      {
+        "text": "Don't be afraid to give up the good to go for the great.",
+        "author": "John D. Rockefeller"
+      },
+      {
+        "text": "I never dreamed about success. I worked for it.",
+        "author": "Est\u00e9e Lauder"
+      },
+      {
+        "text": "Success usually comes to those who are too busy to be looking for it.",
+        "author": "Henry David Thoreau"
+      },
+      {
+        "text": "The road to success and the road to failure are almost exactly the same.",
+        "author": "Colin R. Davis"
+      },
+      {
+        "text": "Opportunities don't happen. You create them.",
+        "author": "Chris Grosser"
+      },
+      {
+        "text": "Don't let the fear of losing be greater than the excitement of winning.",
+        "author": "Robert Kiyosaki"
+      },
+      {
+        "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+        "author": "Winston Churchill"
+      },
+      {
+        "text": "If you really look closely, most overnight successes took a long time.",
+        "author": "Steve Jobs"
+      },
+      {
+        "text": "The only limit to our realization of tomorrow is our doubts of today.",
+        "author": "Franklin D. Roosevelt"
+      },
+      {
+        "text": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "author": "Winston Churchill"
+      },
+      {
+        "text": "Don't be afraid to give up the good to go for the great.",
+        "author": "John D. Rockefeller"
+      },
+      {
+        "text": "I never dreamed about success. I worked for it.",
+        "author": "Est\u00e9e Lauder"
+      },
+      {
+        "text": "Success usually comes to those who are too busy to be looking for it.",
+        "author": "Henry David Thoreau"
+      },
+      {
+        "text": "The road to success and the road to failure are almost exactly the same.",
+        "author": "Colin R. Davis"
+      },
+      {
+        "text": "Opportunities don't happen. You create them.",
+        "author": "Chris Grosser"
+      },
+      {
+        "text": "Don't let the fear of losing be greater than the excitement of winning.",
+        "author": "Robert Kiyosaki"
+      },
+      {
+        "text": "Success is walking from failure to failure with no loss of enthusiasm.",
+        "author": "Winston Churchill"
+      },
+      {
+        "text": "If you really look closely, most overnight successes took a long time.",
+        "author": "Steve Jobs"
+      },
+      {
+        "text": "The only limit to our realization of tomorrow is our doubts of today.",
+        "author": "Franklin D. Roosevelt"
+      }
+    ],
+    "Mindfulness": [
+      {
+        "text": "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "The present moment is the only time over which we have dominion.",
+        "author": "Th\u00edch Nh\u1ea5t H\u1ea1nh"
+      },
+      {
+        "text": "Mindfulness is the aware, balanced acceptance of the present experience.",
+        "author": "Sylvia Boorstein"
+      },
+      {
+        "text": "Mindfulness isn't difficult, we just need to remember to do it.",
+        "author": "Sharon Salzberg"
+      },
+      {
+        "text": "Be happy in the moment, that's enough.",
+        "author": "Mother Teresa"
+      },
+      {
+        "text": "In today's rush, we all think too much, seek too much, want too much, and forget about the joy of just being.",
+        "author": "Eckhart Tolle"
+      },
+      {
+        "text": "Suffering usually relates to wanting things to be different from the way they are.",
+        "author": "Allan Lokos"
+      },
+      {
+        "text": "Each morning we are born again. What we do today is what matters most.",
+        "author": "Buddha"
+      },
+      {
+        "text": "Meditation is not evasion; it is a serene encounter with reality.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "Smile, breathe, and go slowly.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "The present moment is the only time over which we have dominion.",
+        "author": "Th\u00edch Nh\u1ea5t H\u1ea1nh"
+      },
+      {
+        "text": "Mindfulness is the aware, balanced acceptance of the present experience.",
+        "author": "Sylvia Boorstein"
+      },
+      {
+        "text": "Mindfulness isn't difficult, we just need to remember to do it.",
+        "author": "Sharon Salzberg"
+      },
+      {
+        "text": "Be happy in the moment, that's enough.",
+        "author": "Mother Teresa"
+      },
+      {
+        "text": "In today's rush, we all think too much, seek too much, want too much, and forget about the joy of just being.",
+        "author": "Eckhart Tolle"
+      },
+      {
+        "text": "Suffering usually relates to wanting things to be different from the way they are.",
+        "author": "Allan Lokos"
+      },
+      {
+        "text": "Each morning we are born again. What we do today is what matters most.",
+        "author": "Buddha"
+      },
+      {
+        "text": "Meditation is not evasion; it is a serene encounter with reality.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "Smile, breathe, and go slowly.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "The present moment is the only time over which we have dominion.",
+        "author": "Th\u00edch Nh\u1ea5t H\u1ea1nh"
+      },
+      {
+        "text": "Mindfulness is the aware, balanced acceptance of the present experience.",
+        "author": "Sylvia Boorstein"
+      },
+      {
+        "text": "Mindfulness isn't difficult, we just need to remember to do it.",
+        "author": "Sharon Salzberg"
+      },
+      {
+        "text": "Be happy in the moment, that's enough.",
+        "author": "Mother Teresa"
+      },
+      {
+        "text": "In today's rush, we all think too much, seek too much, want too much, and forget about the joy of just being.",
+        "author": "Eckhart Tolle"
+      },
+      {
+        "text": "Suffering usually relates to wanting things to be different from the way they are.",
+        "author": "Allan Lokos"
+      },
+      {
+        "text": "Each morning we are born again. What we do today is what matters most.",
+        "author": "Buddha"
+      },
+      {
+        "text": "Meditation is not evasion; it is a serene encounter with reality.",
+        "author": "Thich Nhat Hanh"
+      },
+      {
+        "text": "Smile, breathe, and go slowly.",
+        "author": "Thich Nhat Hanh"
+      }
+    ],
+    "Funny / Lighthearted": [
+      {
+        "text": "I'm not arguing, I'm just explaining why I'm right.",
+        "author": "Unknown"
+      },
+      {
+        "text": "People say nothing is impossible, but I do nothing every day.",
+        "author": "A.A. Milne"
+      },
+      {
+        "text": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+        "author": "Oscar Wilde"
+      },
+      {
+        "text": "You can't have everything. Where would you put it?",
+        "author": "Steven Wright"
+      },
+      {
+        "text": "The elevator to success is out of order. You'll have to use the stairs.",
+        "author": "Joe Girard"
+      },
+      {
+        "text": "If you think nobody cares if you're alive, try missing a couple of car payments.",
+        "author": "Earl Wilson"
+      },
+      {
+        "text": "Behind every great man is a woman rolling her eyes.",
+        "author": "Jim Carrey"
+      },
+      {
+        "text": "I used to think I was indecisive, but now I'm not too sure.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Life is short. Smile while you still have teeth.",
+        "author": "Mallory Hopkins"
+      },
+      {
+        "text": "I'm not lazy, I'm on energy-saving mode.",
+        "author": "Unknown"
+      },
+      {
+        "text": "I'm not arguing, I'm just explaining why I'm right.",
+        "author": "Unknown"
+      },
+      {
+        "text": "People say nothing is impossible, but I do nothing every day.",
+        "author": "A.A. Milne"
+      },
+      {
+        "text": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+        "author": "Oscar Wilde"
+      },
+      {
+        "text": "You can't have everything. Where would you put it?",
+        "author": "Steven Wright"
+      },
+      {
+        "text": "The elevator to success is out of order. You'll have to use the stairs.",
+        "author": "Joe Girard"
+      },
+      {
+        "text": "If you think nobody cares if you're alive, try missing a couple of car payments.",
+        "author": "Earl Wilson"
+      },
+      {
+        "text": "Behind every great man is a woman rolling her eyes.",
+        "author": "Jim Carrey"
+      },
+      {
+        "text": "I used to think I was indecisive, but now I'm not too sure.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Life is short. Smile while you still have teeth.",
+        "author": "Mallory Hopkins"
+      },
+      {
+        "text": "I'm not lazy, I'm on energy-saving mode.",
+        "author": "Unknown"
+      },
+      {
+        "text": "I'm not arguing, I'm just explaining why I'm right.",
+        "author": "Unknown"
+      },
+      {
+        "text": "People say nothing is impossible, but I do nothing every day.",
+        "author": "A.A. Milne"
+      },
+      {
+        "text": "I am so clever that sometimes I don't understand a single word of what I am saying.",
+        "author": "Oscar Wilde"
+      },
+      {
+        "text": "You can't have everything. Where would you put it?",
+        "author": "Steven Wright"
+      },
+      {
+        "text": "The elevator to success is out of order. You'll have to use the stairs.",
+        "author": "Joe Girard"
+      },
+      {
+        "text": "If you think nobody cares if you're alive, try missing a couple of car payments.",
+        "author": "Earl Wilson"
+      },
+      {
+        "text": "Behind every great man is a woman rolling her eyes.",
+        "author": "Jim Carrey"
+      },
+      {
+        "text": "I used to think I was indecisive, but now I'm not too sure.",
+        "author": "Unknown"
+      },
+      {
+        "text": "Life is short. Smile while you still have teeth.",
+        "author": "Mallory Hopkins"
+      },
+      {
+        "text": "I'm not lazy, I'm on energy-saving mode.",
+        "author": "Unknown"
+      }
+    ],
+    "Historical Figures": [
+      {
+        "text": "Give me liberty, or give me death!",
+        "author": "Patrick Henry"
+      },
+      {
+        "text": "The only thing we have to fear is fear itself.",
+        "author": "Franklin D. Roosevelt"
+      },
+      {
+        "text": "Injustice anywhere is a threat to justice everywhere.",
+        "author": "Martin Luther King Jr."
+      },
+      {
+        "text": "I came, I saw, I conquered.",
+        "author": "Julius Caesar"
+      },
+      {
+        "text": "That's one small step for man, one giant leap for mankind.",
+        "author": "Neil Armstrong"
+      },
+      {
+        "text": "Ask not what your country can do for you \u2013 ask what you can do for your country.",
+        "author": "John F. Kennedy"
+      },
+      {
+        "text": "Speak softly and carry a big stick.",
+        "author": "Theodore Roosevelt"
+      },
+      {
+        "text": "Float like a butterfly, sting like a bee.",
+        "author": "Muhammad Ali"
+      },
+      {
+        "text": "Mr. Gorbachev, tear down this wall!",
+        "author": "Ronald Reagan"
+      },
+      {
+        "text": "Those who dare to fail miserably can achieve greatly.",
+        "author": "Robert F. Kennedy"
+      },
+      {
+        "text": "Give me liberty, or give me death!",
+        "author": "Patrick Henry"
+      },
+      {
+        "text": "The only thing we have to fear is fear itself.",
+        "author": "Franklin D. Roosevelt"
+      },
+      {
+        "text": "Injustice anywhere is a threat to justice everywhere.",
+        "author": "Martin Luther King Jr."
+      },
+      {
+        "text": "I came, I saw, I conquered.",
+        "author": "Julius Caesar"
+      },
+      {
+        "text": "That's one small step for man, one giant leap for mankind.",
+        "author": "Neil Armstrong"
+      },
+      {
+        "text": "Ask not what your country can do for you \u2013 ask what you can do for your country.",
+        "author": "John F. Kennedy"
+      },
+      {
+        "text": "Speak softly and carry a big stick.",
+        "author": "Theodore Roosevelt"
+      },
+      {
+        "text": "Float like a butterfly, sting like a bee.",
+        "author": "Muhammad Ali"
+      },
+      {
+        "text": "Mr. Gorbachev, tear down this wall!",
+        "author": "Ronald Reagan"
+      },
+      {
+        "text": "Those who dare to fail miserably can achieve greatly.",
+        "author": "Robert F. Kennedy"
+      },
+      {
+        "text": "Give me liberty, or give me death!",
+        "author": "Patrick Henry"
+      },
+      {
+        "text": "The only thing we have to fear is fear itself.",
+        "author": "Franklin D. Roosevelt"
+      },
+      {
+        "text": "Injustice anywhere is a threat to justice everywhere.",
+        "author": "Martin Luther King Jr."
+      },
+      {
+        "text": "I came, I saw, I conquered.",
+        "author": "Julius Caesar"
+      },
+      {
+        "text": "That's one small step for man, one giant leap for mankind.",
+        "author": "Neil Armstrong"
+      },
+      {
+        "text": "Ask not what your country can do for you \u2013 ask what you can do for your country.",
+        "author": "John F. Kennedy"
+      },
+      {
+        "text": "Speak softly and carry a big stick.",
+        "author": "Theodore Roosevelt"
+      },
+      {
+        "text": "Float like a butterfly, sting like a bee.",
+        "author": "Muhammad Ali"
+      },
+      {
+        "text": "Mr. Gorbachev, tear down this wall!",
+        "author": "Ronald Reagan"
+      },
+      {
+        "text": "Those who dare to fail miserably can achieve greatly.",
+        "author": "Robert F. Kennedy"
+      }
+    ]
+  }

@@ -1,0 +1,40 @@
+{
+  "name": "buildfireplugin",
+  "version": "0.0.1",
+  "description": "template for a buildfire plugin using gulp",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp && cd ../ && rm -rf <pluginName>.zip && zip -r <pluginName>.zip <pluginName>_release && rm -rf <pluginName>_release"
+  },
+  "author": "Mahmoud AlSharif",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://link-to-your-git-repo.com"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.25%"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-prettier": "^4.0.0",
+    "gulp-print": "^5.0.2",
+    "gulp-terser": "^2.1.0",
+    "rimraf": "^5.0.1"
+  }
+}

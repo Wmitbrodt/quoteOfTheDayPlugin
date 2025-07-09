@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+
+	<!-- JS -->
+	<script src="../../../scripts/buildfire.js"></script>
+
+	<!-- build:bundleJSFiles  -->
+	<script src="./global/js/models/Post.js"></script>
+	<script src="js/b.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:bundleCSSFiles  -->
+	<link rel="stylesheet" type="text/css" href="css/a.css">
+	<!-- endbuild -->
+
+	<!--
+	<script src="../../../../scripts/angular/angular.min.js"></script>
+	<script src="../../../../scripts/angular/ui-bootstrap.min.js"></script>
+	<script src="../../../../scripts/jquery/jquery-1.11.2.min.js"></script>
+	-->
+</head>
+<body>
+<div class="greeting-block" style="margin-bottom: 1rem;">
+	<h2 id="greetingText" style="margin: 0;"></h2>
+	<p id="currentTime" style="margin: 0; font-style: italic;"></p>
+</div>
+
+<label for="categorySelect"><strong>Select a category:</strong></label>
+<select id="categorySelect">
+	<option value="">-- Choose a category --</option>
+</select>
+
+<div id="quoteContainer" style="margin-top: 20px; display: none;">
+	<p id="quoteText">"Loading..."</p>
+	<p id="quoteAuthor" style="font-style: italic;"></p>
+	<button id="anotherBtn" style="margin-top: 10px;">Show Another</button>
+</div>
+</body>
+</html>
