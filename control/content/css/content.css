@@ -1,0 +1,38 @@
+/* Style the heading: large but less bottom margin */
+h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+/* Full-width input with balanced spacing */
+#greetingInput {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+/* Button styling */
+#saveGreetingBtn,
+#resetGreetingBtn {
+  padding: 8px 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: #4f3af5;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+#saveGreetingBtn:hover,
+#resetGreetingBtn:hover {
+  background-color: #3c2cd6;
+}

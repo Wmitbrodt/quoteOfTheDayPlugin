@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8" />
-
-	<!-- JS -->
-	<script src="../../../../scripts/buildfire.js"></script>
-
-	<!--
-	<script src="../../../../scripts/angular/angular.min.js"></script>
-	<script src="../../../../scripts/angular/ui-bootstrap.min.js"></script>
-	<script src="../../../../scripts/jquery/jquery-1.11.2.min.js"></script>
-	-->
+  <meta charset="UTF-8" />
+  <title>Quote Plugin Settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="../../../../scripts/buildfire.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/content.css" />
 </head>
 <body>
-	<h2>Quote of the Day</h2>
+  <div class="settings-section">
+    <h3>Edit Greeting Message</h3><br><br>
+    <input type="text" id="customGreetingInput" placeholder="Enter custom greeting..." />
+    <button id="saveGreetingBtn">Save Greeting</button>
+    <button id="resetGreetingBtn">Reset to Default</button>
+  </div>
+
+  <script src="js/content.js"></script>
 </body>
 </html>
+
