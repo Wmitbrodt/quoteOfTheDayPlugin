@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     categorySelect.style.display = showCategoryUI ? "block" : "none";
     if (categoryLabel) categoryLabel.style.display = showCategoryUI ? "block" : "none";
 
-    // Fetch custom greeting (if set), otherwise fall back to dynamic
     if (showGreetingValue || showTimeValue) {
       buildfire.datastore.get("GreetingSettings", (err, result) => {
         if (err) updateGreeting();
@@ -93,7 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // If no saved quote or it's outdated, pick a new one
     showRandomQuote(true);
   }
 
@@ -119,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // When a new category is selected from the dropdown
+  // Handle category change
   categorySelect.addEventListener("change", () => {
     currentCategory = categorySelect.value;
     if (!currentCategory) {
@@ -138,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showRandomQuote(true);
   });
 
-  // Load plugin settings, apply them, and render gradient
+  // Load plugin settings and apply them
   buildfire.datastore.get("Settings", (err, result) => {
     if (err) console.error("Settings fetch error:", err);
     settings = result?.data || {
@@ -148,7 +146,6 @@ document.addEventListener("DOMContentLoaded", () => {
       chooseRandomCategories: false
     };
 
-    // ✅ Apply background color or gradient from settings
     if (settings.backgroundGradient) {
       document.body.style.background = settings.backgroundGradient;
     }
@@ -156,32 +153,62 @@ document.addEventListener("DOMContentLoaded", () => {
     applySettings();
   });
 
-  // Load quotes from JSON file and show quote of the day
-  fetch("../widget/data/quotes.json")
-    .then(response => response.json())
-    .then(data => {
-      quotesData = data;
-      const allCategories = Object.keys(quotesData);
-      populateCategories(allCategories);
-
-      // Restore last selected category or default to the first
-      if (!settings.chooseRandomCategories) {
-        const savedCategory = localStorage.getItem("lastSelectedCategory");
-        if (savedCategory && quotesData[savedCategory]) {
-          currentCategory = savedCategory;
-          categorySelect.value = savedCategory;
-          currentQuotes = quotesData[currentCategory];
-        } else {
-          currentCategory = allCategories[0];
-          currentQuotes = quotesData[currentCategory];
-        }
+  // Load quotes from datastore (and fallback seed if empty)
+  function loadQuotes() {
+    buildfire.datastore.get("Quotes", (err, result) => {
+      if (err) {
+        console.error("Failed to load quotes from datastore:", err);
+        quoteText.textContent = "Error loading quotes.";
+        return;
       }
 
-      quoteContainer.style.display = "block";
-      showQuoteOfTheDay();
-    })
-    .catch(err => {
-      console.error("Failed to load quotes.json:", err);
-      quoteText.textContent = "Failed to load quotes.";
+      if (result && result.data && Object.keys(result.data).length > 0) {
+        quotesData = result.data;
+        initializeQuotes();
+      } else {
+        // Seed with bundled quotes.json
+        fetch("../widget/data/quotes.json")
+          .then(response => response.json())
+          .then(defaultQuotes => {
+            buildfire.datastore.save(defaultQuotes, "Quotes", (saveErr) => {
+              if (saveErr) {
+                console.error("Failed to seed default quotes:", saveErr);
+                quoteText.textContent = "Could not seed quotes.";
+              } else {
+                quotesData = defaultQuotes;
+                console.log("✅ Default quotes seeded.");
+                initializeQuotes();
+              }
+            });
+          })
+          .catch(jsonErr => {
+            console.error("Error loading bundled quotes.json:", jsonErr);
+            quoteText.textContent = "Could not load default quotes.";
+          });
+      }
     });
+  }
+
+  // Setup quote UI
+  function initializeQuotes() {
+    const allCategories = Object.keys(quotesData);
+    populateCategories(allCategories);
+
+    if (!settings.chooseRandomCategories) {
+      const savedCategory = localStorage.getItem("lastSelectedCategory");
+      if (savedCategory && quotesData[savedCategory]) {
+        currentCategory = savedCategory;
+        categorySelect.value = savedCategory;
+        currentQuotes = quotesData[currentCategory];
+      } else {
+        currentCategory = allCategories[0];
+        currentQuotes = quotesData[currentCategory];
+      }
+    }
+
+    quoteContainer.style.display = "block";
+    showQuoteOfTheDay();
+  }
+
+  loadQuotes(); // ✅ Start quote logic
 });
